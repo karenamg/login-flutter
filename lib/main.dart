@@ -46,8 +46,8 @@ class HomeScreen extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                Text('Bienvenido a Konie'),
-                SizedBox(height: 20),
+                const Text('Bienvenido a Konie'),
+                const SizedBox(height: 20),
                 Padding(
                   padding: const EdgeInsets.all(10.0),
                   child: ElevatedButton(
@@ -57,7 +57,7 @@ class HomeScreen extends StatelessWidget {
                         MaterialPageRoute(builder: (context) => SignUpScreen()),
                       );
                     },
-                    child: Text('Sign Up'),
+                    child: const Text('Sign Up'),
                   ),
                 ),
                 Padding(
@@ -69,7 +69,7 @@ class HomeScreen extends StatelessWidget {
                         MaterialPageRoute(builder: (context) => SignInScreen()),
                       );
                     },
-                    child: Text('Sign In'),
+                    child: const Text('Sign In'),
                   ),
                 ),
               ],
@@ -80,7 +80,7 @@ class HomeScreen extends StatelessWidget {
             left: 10.0,
             bottom: 10.0,
             child: IconButton(
-              icon: Icon(Icons.info),
+              icon: const Icon(Icons.info),
               onPressed: () {
                 Navigator.push(
                   context,
